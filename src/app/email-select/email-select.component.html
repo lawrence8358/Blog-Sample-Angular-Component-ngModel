@@ -1,0 +1,7 @@
+<div>
+  <input #searchBox  (keyup)="onEmailKeyup(searchBox.value)" [value]="useEmail" placeholder="電子郵件"  />
+  <!-- 我是選單區塊 -->
+  <div style="position: absolute;z-index:1000">
+    <div *ngFor="let item of datas | async" class="search-result" (click)="onEmaiListClick(item);" #searchList> {{item}} </div>
+  </div>
+</div>

@@ -1,0 +1,9 @@
+<h1>表單範例</h1>
+
+<form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)">
+  <div><input placeholder="帳號" formControlName="account"></div>
+  <!-- app-email-select 是自定義的Component -->
+  <app-email-select formControlName="email"></app-email-select>
+  <div><input type="submit" value="送出" /></div>
+  <div>{{ myForm.value | json }}</div>
+</form>

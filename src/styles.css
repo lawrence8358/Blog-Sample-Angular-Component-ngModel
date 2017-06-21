@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+  font-family: "微軟正黑體";
+}
+
+input {
+  width:200px;
+}
+
+.search-result{
+  border-bottom: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  width:195px;
+  height: 16px;
+  padding: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.search-result:hover {
+  color: #eee;
+  background-color: #607D8B;
+}
+
+#search-box{
+  width: 200px;
+  height: 20px;
+}
+
+div { padding: 5px;}
